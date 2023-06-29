@@ -1,0 +1,5 @@
+numpy
+pillow
+tensorflow (to intsall this package in windows you need to enable windowa long path link to tutorial : https://www.youtube.com/watch?v=oZXNWho0x-g&ab_channel=TheWindowsClub )
+scikit-learn
+keras
