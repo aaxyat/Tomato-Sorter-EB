@@ -7,7 +7,7 @@ from PIL import Image
 import numpy as np
 
 # Load and resize the new image
-image_path = 'tomato2.jpg'  # Replace with the path to your new image
+image_path = 'tomato.jpg'  # Replace with the path to your new image
 image_size = (128, 128)
 image = Image.open(image_path).resize(image_size)
 
