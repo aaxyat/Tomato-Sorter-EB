@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Ripe Tomato</title>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #202020;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+        }
+        .header {
+            text-align: center;
+            font-size: 3em;
+            margin-top: 2em;
+        }
+        .subheader {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 2em;
+        }
+        .btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            border-radius: 50px !important;  /* Make the button rounded */
+        }
+        /* Hide default file select input */
+        #file {
+            display: none;
+        }
+        /* Style the label to look like a button */
+        .select-link {
+            display: block;
+            width: 200px;
+            padding: 10px 20px;
+            background-color: #64b5f6;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            margin: 20px auto;
+            border-radius: 50px;  /* Make the button rounded */
+        }
+        .select-link:hover {
+            background-color: #33c3f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">The Ripe Tomato</div>
+    <div class="subheader">By Yubhasker Baral</div>
+    <form id="uploadForm" action="/uploader" method="post" enctype="multipart/form-data">
+        <a href="#" id="selectLink" class="select-link" onclick="document.getElementById('file').click(); return false;">Select a file to upload</a>
+        <input type="file" id="file" name="file" style="display: none;" onchange="document.getElementById('selectLink').innerHTML = this.value;">
+        <button class="btn waves-effect waves-light" type="submit" name="action">Upload Image</button>
+    </form>
+
+    <!-- JavaScript for form validation -->
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function(e) {
+            if (document.getElementById('file').files.length === 0) {
+                alert('Please select an image to upload.');
+                e.preventDefault();  // prevent form submission
+            }
+        });
+    </script>
+</body>
+</html>
