@@ -1,7 +1,7 @@
 # The Ripe Tomato 🍅
 [![Build Passing](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/NonvegPanda/Tomato-Sorter-EB/actions)
 [![Docker Pulls](https://img.shields.io/docker/pulls/aaxyat/tomatosorter)](https://hub.docker.com/r/aaxyat/tomatosorter)
-[![GitHub Stars](https://img.shields.io/github/stars/NonvegPanda/Tomato-Sorter-EB?style=social)](https://github.com/NonvegPanda/Tomato-Sorter-EB/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/aaxyat/Tomato-Sorter-EB?style=social)](https://github.com/NonvegPanda/Tomato-Sorter-EB/stargazers)
 
 
 This is a machine learning based web application that helps to predict whether a tomato is ripe or unripe. It utilizes a model trained on Keras and provides an easy-to-use interface for uploading a tomato image and receiving the prediction.
